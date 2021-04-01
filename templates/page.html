@@ -1,0 +1,18 @@
+
+{%  extends 'base.html' %}
+{%  block content %}
+    <h1>Hello world</h1>
+    replace me
+    <p>This is a template wo ta ma de hao lei</p>
+    <h3>{{ title|capfirst|upper }}</h3>
+    <p>
+    {{ my_number}}, {{ my_text }}
+    </p>
+    <ul>
+    {% for my_sub_item in my_list %}
+
+        <li>{{ my_sub_item }}</li>
+    {% endfor %}
+    </ul>
+
+{%  endblock %}
